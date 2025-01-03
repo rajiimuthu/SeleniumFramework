@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-03T12:57:08 IST" name="MyTestSuite" finished-at="2025-01-03T12:57:31 IST" duration-ms="23227">
+    <groups>
+    </groups>
+    <test started-at="2025-01-03T12:57:08 IST" name="Submit Order Test" finished-at="2025-01-03T12:57:25 IST" duration-ms="17144">
+      <class name="rahulshettyacademy.Tests.SubmitOrder">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.Tests.SubmitOrder@53fb3dab]" started-at="2025-01-03T12:57:08 IST" name="launchApplication" finished-at="2025-01-03T12:57:15 IST" duration-ms="7052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder()[pri:0, instance:rahulshettyacademy.Tests.SubmitOrder@53fb3dab]" started-at="2025-01-03T12:57:15 IST" name="submitOrder" finished-at="2025-01-03T12:57:19 IST" duration-ms="3609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.Tests.SubmitOrder@53fb3dab]" started-at="2025-01-03T12:57:19 IST" name="tearDown" finished-at="2025-01-03T12:57:19 IST" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.Tests.SubmitOrder@53fb3dab]" started-at="2025-01-03T12:57:19 IST" name="launchApplication" finished-at="2025-01-03T12:57:24 IST" duration-ms="5339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="verifyOrders()[pri:0, instance:rahulshettyacademy.Tests.SubmitOrder@53fb3dab]" started-at="2025-01-03T12:57:24 IST" name="verifyOrders" finished-at="2025-01-03T12:57:25 IST" depends-on-methods="rahulshettyacademy.Tests.SubmitOrder.submitOrder" duration-ms="648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrders -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.Tests.SubmitOrder@53fb3dab]" started-at="2025-01-03T12:57:25 IST" name="tearDown" finished-at="2025-01-03T12:57:25 IST" duration-ms="209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- rahulshettyacademy.Tests.SubmitOrder -->
+    </test> <!-- Submit Order Test -->
+    <test started-at="2025-01-03T12:57:25 IST" name="Error Validations Test" finished-at="2025-01-03T12:57:31 IST" duration-ms="6064">
+      <class name="rahulshettyacademy.Tests.ErrorValidations">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidations@5c7933ad]" started-at="2025-01-03T12:57:25 IST" name="launchApplication" finished-at="2025-01-03T12:57:31 IST" duration-ms="5413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginErrorValidation()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidations@5c7933ad]" started-at="2025-01-03T12:57:31 IST" name="loginErrorValidation" finished-at="2025-01-03T12:57:31 IST" duration-ms="449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.Tests.ErrorValidations@5c7933ad]" started-at="2025-01-03T12:57:31 IST" name="tearDown" finished-at="2025-01-03T12:57:31 IST" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- rahulshettyacademy.Tests.ErrorValidations -->
+    </test> <!-- Error Validations Test -->
+  </suite> <!-- MyTestSuite -->
+</testng-results>

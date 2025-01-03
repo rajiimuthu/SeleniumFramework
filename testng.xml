@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="MyTestSuite" parallel="methods" thread-count="3">
+    <test name="Submit Order Test">
+        <classes>
+           <class name="rahulshettyacademy.Tests.SubmitOrder"/>
+        </classes>
+    </test>
+    <test name="Error Validations Test">
+        <classes>
+           <class name="rahulshettyacademy.Tests.ErrorValidations"/>
+        </classes>
+    </test>
+</suite>
