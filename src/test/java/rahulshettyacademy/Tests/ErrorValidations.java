@@ -11,13 +11,13 @@ import rahulshettyacademy.TestComponents.BaseTest;
 
 public class ErrorValidations extends BaseTest{
 
-	@Test
+	@Test(groups= {"Regression"})
 	public void loginErrorValidation() throws IOException {
 		
 		//String productName = "QWERTY";
 		//LandingPage landingpage = launchApplication();
 		ProductCatalogue productCatalogue = landingPage.loginApp("rajimuthu123@gmail.com", "Pass@123");
-		Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
+		Assert.assertEquals("Incorrect email or password..", landingPage.getErrorMessage());
 
 	}
 

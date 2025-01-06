@@ -6,22 +6,31 @@ import rahulshettyacademy.PageObjects.LandingPage;
 import rahulshettyacademy.PageObjects.OrderPage;
 import rahulshettyacademy.PageObjects.ProductCatalogue;
 import rahulshettyacademy.TestComponents.BaseTest;
+
+import java.io.File;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.util.HashMap;
 import java.util.List;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.ExtentTest;
 
 public class SubmitOrder extends BaseTest{
 
-@Test
+@Test(groups= {"primary"}, dataProvider="getData")
 
-	public void submitOrder() throws IOException{
+	public void submitOrder(HashMap<String,String> input) throws IOException{
 		
-		String productName = "QWERTY";
+		//ExtentTest test = extent.createTest("submitOrder");
+		String productName = input.get("product");
 		//LandingPage landingpage = launchApplication();
-		ProductCatalogue productCatalogue = landingPage.loginApp("rajimuthu@gmail.com", "Pass@123");
+		ProductCatalogue productCatalogue = landingPage.loginApp(input.get("email"), input.get("password"));
 		List<WebElement> products = productCatalogue.getProdList();		
 		//WebElement prod = products.getProductbyName(productName);
 	//	productCatalogue.addProdTotheCart(testDataList.get(0).getProductName());
@@ -36,11 +45,13 @@ public class SubmitOrder extends BaseTest{
 		checkout.selectCountry("India");
 		ConfirmationPage ca = checkout.submitOrder();
 		Assert.assertTrue(ca.confirmation().equalsIgnoreCase("THANKYOU FOR THE ORDER."));
+//		test.fail("result mismatch");
+//		extent.flush();
 		
 	}
 
 
-@Test(dependsOnMethods= {"submitOrder"})
+//@Test(dependsOnMethods= {"submitOrder"})
 public void verifyOrders() throws IOException{
 	
 	
@@ -51,6 +62,13 @@ public void verifyOrders() throws IOException{
 	Assert.assertTrue(orderPage.verifyOrdersPageDetails(productName));
 		
 
+}
+
+@DataProvider
+public Object[][] getData() throws IOException {
+	//String jsonContent = FileUtils.readFileToString(new File("), StandardCharsets.UTF_8);
+	List<HashMap<String,String>> mapList = getJsonDataToMap(System.getProperty("user.dir")+"//src//test//java//rahulshettyacademy//TestData//Data.json");
+	return new Object[][] {{mapList.get(0)},{mapList.get(1)}};
 }
 
 

@@ -6,9 +6,8 @@
       <class name="rahulshettyacademy.Tests.SubmitOrder">
         <methods>
           <include name="tearDown"/>
-          <include name="verifyOrders"/>
           <include name="launchApplication"/>
-          <include name="submitOrder"/>
+          <include name="submitOrder" invocation-numbers="1"/>
         </methods>
       </class> <!-- rahulshettyacademy.Tests.SubmitOrder -->
     </classes>
