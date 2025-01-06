@@ -8,10 +8,11 @@ import org.testng.annotations.Test;
 import rahulshettyacademy.PageObjects.LandingPage;
 import rahulshettyacademy.PageObjects.ProductCatalogue;
 import rahulshettyacademy.TestComponents.BaseTest;
+import rahulshettyacademy.TestComponents.RetryTest;
 
 public class ErrorValidations extends BaseTest{
 
-	@Test(groups= {"Regression"})
+	@Test(groups= {"Regression"},retryAnalyzer=RetryTest.class)
 	public void loginErrorValidation() throws IOException {
 		
 		//String productName = "QWERTY";

@@ -1,31 +1,25 @@
 package rahulshettyacademy.Tests;
-import rahulshettyacademy.PageObjects.CartPage;
+import rahulshettyacademy.PageObjects.*;
 import rahulshettyacademy.PageObjects.CheckOutPage;
 import rahulshettyacademy.PageObjects.ConfirmationPage;
-import rahulshettyacademy.PageObjects.LandingPage;
 import rahulshettyacademy.PageObjects.OrderPage;
 import rahulshettyacademy.PageObjects.ProductCatalogue;
 import rahulshettyacademy.TestComponents.BaseTest;
 
-import java.io.File;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.List;
 
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.ExtentTest;
-
 public class SubmitOrder extends BaseTest{
 
 @Test(groups= {"primary"}, dataProvider="getData")
 
-	public void submitOrder(HashMap<String,String> input) throws IOException{
+	public void submitOrderTest(HashMap<String,String> input) throws IOException{
 		
 		//ExtentTest test = extent.createTest("submitOrder");
 		String productName = input.get("product");

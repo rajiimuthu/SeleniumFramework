@@ -1,0 +1,11 @@
+rahulshettyacademy\Utils\SingletonWebDriver.class
+rahulshettyacademy\Utils\ExcelReaderUtility.class
+rajiacademy\AbstractComponents\ProductDetails.class
+rahulshettyacademy\resources\ExtentReportsNG.class
+rahulshettyacademy\PageObjects\CheckOutPage.class
+rahulshettyacademy\PageObjects\OrderPage.class
+rahulshettyacademy\PageObjects\ConfirmationPage.class
+rajiacademy\AbstractComponents\AbstractComponents.class
+rahulshettyacademy\PageObjects\CartPage.class
+rahulshettyacademy\PageObjects\LandingPage.class
+rahulshettyacademy\PageObjects\ProductCatalogue.class

@@ -5,6 +5,11 @@
     <listener class-name="rahulshettyacademy.TestComponents.Listeners"/>
   </listeners>
   <test thread-count="2" parallel="tests" name="Error Validations Test(failed)">
+    <groups>
+      <run>
+        <include name="Regression"/>
+      </run>
+    </groups>
     <classes>
       <class name="rahulshettyacademy.Tests.ErrorValidations">
         <methods>

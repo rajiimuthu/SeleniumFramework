@@ -7,13 +7,13 @@
 
 	<groups>
 		<run>
-			<include name="Regression" />
+			<include name="Primary" />
 		</run>
 	</groups>
 
 	<test name="Submit Order Test">
 		<classes>
-			<class name="rahulshettyacademy.Tests.SubmitOrder" />
+			<class name="rahulshettyacademy.Tests.submitOrder" />
 		</classes>
 	</test>
 	<test name="Error Validations Test">
